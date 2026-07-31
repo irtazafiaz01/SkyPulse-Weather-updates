@@ -1,0 +1,343 @@
+/* Making Every Default sizing  None */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling of Whole UI */
+body{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;       
+    background-color: #e8e8e8; 
+    font-family: Arial, sans-serif; 
+}
+/* Styling Of Main Container */
+.main-container{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;/* Hide Everything Outside Main Container*/
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);/* Light shadow for modern look */
+}
+/* Styling Of Left and right sections */
+.left-sec{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.right-sec{
+    width: 50%;
+    height: 100%;
+}
+/* Just Left Section Styling*/
+.left-sec{
+
+    /* Takes half of the container width */
+    width: 50%;
+
+    /* Takes full height of the container */
+    height: 100%;
+
+    /* Sets the background image */
+    background-image: url("assets/images/Background.jpg");
+
+    /* Prevents image from repeating */
+    background-repeat: no-repeat;
+
+    /* Makes image cover the whole section */
+    background-size: cover;
+
+    /* Keeps image centered */
+    background-position: center;
+
+    /* So child elements can be positioned inside */
+    position: relative;
+
+     /*  It Round Only The Left Corners */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+#location{
+    margin-top: 40px;
+
+    margin-left: 40px;
+}
+#location h6{
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: rgb(12, 12, 12);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+#location-para{
+
+    /* Move slightly below heading */
+    display: block;
+
+    margin-top: 6px;
+
+    margin-left: 15px;
+
+    color: rgb(7, 7, 7);
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+/* Main content */
+#main-content{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+
+    margin: 0;
+}
+
+#One-word{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+#main-content h2{
+
+    color: rgb(10, 10, 10);
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    /* Better line spacing */
+    line-height: 1.2;
+
+    margin-bottom: 35px;
+
+    margin-top: 100px;
+}
+
+#heading-line{
+    width: 150px;          /* Line length */
+    height: 6px;           /* Line thickness */
+    background: rgb(10, 10, 10);     /* Line color */
+    border-radius: 20px;   /* Rounded ends */
+    margin: 20px auto;     /* Centers the line */
+
+}
+
+/* Center heading, line and input */
+#sub-main{
+    text-align: center;
+      transform: translateY(-100px); /*It Moves Content 50px Upward */
+}
+
+/* Search Box */
+#search-box{
+    position: relative;
+    width: 350px;
+    left:30px;
+}
+
+/* Input */
+#input-location{
+    width: 100%;
+    padding: 12px 45px 12px 15px; /* Right side space for icon */
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Search Icon */
+#search-btn{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+   font-size: 24px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Right Section Styling */
+
+/*Nav-Bar List Styling*/
+#nav-bar ul {
+    display: flex;
+    list-style:none;
+    text-decoration: none;
+    gap:40px;
+    justify-content: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+/*Nav-Bar Links Styling*/
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color .3s ease;
+    cursor: pointer;
+}
+#nav-bar a:hover{
+    color:#3b82f6;
+}
+
+.right-sec{
+
+    /* It Takes 50% width of the main container */
+    width: 50%;
+
+    /* Takes full height */
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* Space inside the section */
+    padding: 30px;
+    background-color: #ffffff;
+
+}
+/* Today word Styling */
+#today-word{
+
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+/* Today Weather Card Styling */
+#today-card{
+
+    width: 95%;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#main-weather{
+
+    /* Take equal space */
+    flex: 1;
+
+    /* Vertical Divider */
+    border-right: 2px solid #dcdcdc;
+
+    /* Space between content and line */
+    padding-right: 20px;
+
+
+}
+/* Weather Icon Styling */
+#weather-icon{
+    width: 100px;
+    height: 100px;
+    /* Keeps the image proportions correct */
+    object-fit: contain;
+
+}
+/* Lower Section Styling */
+.lower-sec{
+    width:100%;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+#daily-word{
+    font-size:2rem ;
+    font-weight: 700;
+    color: #222;
+}
+#daily-weather-cards{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+#detail-weather{
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding:20px;
+   height:50%;
+   width:50%;
+   gap:10px;
+}
+#detail-weather h2{
+ font-size: small;
+}
+#daily-weather-cards{
+
+    display:flex;
+
+    gap:15px;
+
+    overflow-x:auto;
+
+    padding:10px;
+
+}
+.daily-weather-card{
+
+    min-width:140px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+}
+/* Mobile Devices */
+@media screen and (max-width:768px){
+    .main-container{
+    flex-direction:column;
+}
+}

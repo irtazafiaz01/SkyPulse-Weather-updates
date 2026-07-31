@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Pulse|Weather Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weather.js" defer></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><!--This is location icons link-->
+</head>
+<body>
+    <!--This Container Contains Whole website Content Both Left And Right Sections-->
+    <div class="main-container">
+    <!--This section contains only left section items-->
+    <section class="left-sec">
+     <div id="location">
+     <h6>
+     <i class="fa-solid fa-location-dot"></i>
+     Current Location
+     </h6>
+     <span id="location-para"></span><!--it will displays locations on UI BY using JS Now Just Place Dummy Data-->
+     </div>
+     <h3 id="One-word">forecast</h3>
+     <div id="main-content">
+     <div id="sub-main">
+     <h2 id="one-line">The Only Whether Forecast You Need</h2>
+     <div id="heading-line"></div>
+     <div id="search-box">
+     <input
+        id="input-location"
+        type="text"
+        placeholder="Enter Location">
+
+     <button id="search-btn">
+     <i class="fa-solid fa-magnifying-glass"></i>
+     </button>
+     </div><!--Dropdown Use Karna Hai! Please Remember Me-->
+     </div>
+     </div>
+    </section>
+
+
+    <!--This section contains only right section items-->
+    <section class="right-sec">
+    <!--Upper Section Starts From Here-->
+     <section class="upper-sec">
+     <nav id="nav-bar">
+     <ul>
+     <li><a href="weathers.html" target="_blank">Weathers</a></li>
+     <li><a href="alerts.html" target="_blank">Alerts</a></li>
+     <li><a href="map.html" target="_blank">Map</a></li>
+     <li><a href="sattelite.html" target="_blank">Sattelite</a></li>
+     <li><a href="news.html" target="_blank">News</a></li>
+     </ul>
+     </nav>
+     <!--This Heading Contains Todays Word just-->
+     <h1 id="today-word">Today</h1>
+     <!--This Container Contains Todays Current Weateher Card-->
+     <article id="today-card">
+        <!--This Container Contains Main Weather Info-->
+        <div id="main-weather">
+        <h1 id="temprature"></h1>
+        <p id="weather-condition"></p>
+        <img id="weather-icon" alt="Weather-icon">
+        </div>
+        <!--This Container Contains Detailed Weather Info-->
+        <div id="detail-weather">
+        <p id="today-date"></p>
+        <h2 id="city-name"></h2>
+        <span id="humidity"></span>
+        <span id="wind-speed"></span>
+        <span id="visibility"></span>
+        <span id="uv-index"></span>
+         </div>
+     </article>
+     </section>
+
+     <!--Lower Section Starts From Here-->
+     <section class="lower-sec">
+
+     <h1 id="daily-word">Daily Forecast</h1>
+     <!--This Container Contains Daily Weather Cards-->
+     <div id="daily-weather-cards">
+    
+     </div>
+
+     </section>
+
+    </section>
+</div>
+</body>
+</html>
